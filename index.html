@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+<video autoplay muted loop playsinline class="background-video">
+    <!-- Ganti 'animasi.mp4' dengan nama file video animasi Anda -->
+    <source src="0929.mp4" type="video/mp4">
+        Browser Anda tidak mendukung tag video.
+    </video>
+
+    <html lang="id" class="scroll-smooth">
+    <head>
+        <meta name="google-site-verification" content="0jUHlmj4L3e3MgOFg8HK2EsEoPc2U1uJ2A7nOaEUG-g" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PT. Jawara Pandu Bhakti | Mitra Profesional Penyedia Tenaga Kerja & Facility Management</title>
+
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="PT. Jawara Pandu Bhakti adalah perusahaan penyedia tenaga kerja profesional, security service, cleaning service, dan facility management terkemuka di Indonesia.">
+        <meta name="keywords" content="Penyedia Tenaga Kerja, Outsourcing, Security Service, Cleaning Service, Facility Management, PT Jawara Pandu Bhakti">
+        <link rel="canonical" href="https://www.jawarapandubhakti.co.id/">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32/0B3B8C/FFFFFF?text=JP">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: 'class',
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#0B3B8C',
+                            secondary: '#2563EB',
+                            accent: '#38BDF8',
+                            dark: '#0F172A',
+                            light: '#F8FAFC',
+                        },
+                        fontFamily: {
+                            poppins: ['Poppins', 'sans-serif'],
+                        }
+                    }
+                }
+            }
+        </script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!-- SwiperJS CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+        <!-- AOS Animation CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+        <!-- Custom CSS Stylesheet -->
+        <style>
+            /* Custom Scrollbar */
+            ::-webkit-scrollbar {
+                width: 8px;
+            }
+            ::-webkit-scrollbar-track {
+                background: #0F172A;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #0B3B8C;
+                border-radius: 4px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: #2563EB;
+            }
+
+            /* Custom Cursor Desktop */
+            @media (min-width: 1024px) {
+                .custom-cursor-dot {
+                    width: 8px;
+                    height: 8px;
+                    background-color: #38BDF8;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    border-radius: 50%;
+                    pointer-events: none;
+                    z-index: 9999;
+                    transition: transform 0.1s ease;
+                }
+
+                .custom-cursor-outline {
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid rgba(56, 189, 248, 0.5);
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    border-radius: 50%;
+                    pointer-events: none;
+                    z-index: 9998;
+                    transition: transform 0.15s ease;
+                }
+            }
+
+            /* Navbar Scroll State */
+            .navbar-scrolled {
+                background: rgba(255, 255, 255, 0.95) !important;
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            }
+
+            .dark .navbar-scrolled {
+                background: rgba(15, 23, 42, 0.95) !important;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            }
+
+            .navbar-scrolled .nav-text,
+            .navbar-scrolled .nav-link {
+                color: #0F172A !important;
+            }
+
+            .dark .navbar-scrolled .nav-text,
+            .dark .navbar-scrolled .nav-link {
+                color: #F8FAFC !important;
+            }
+
+            /* Ripple Effect */
+            .ripple-btn {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .ripple {
+                position: absolute;
+                background: rgba(255, 255, 255, 0.4);
+                border-radius: 50%;
+                transform: scale(0);
+                animation: ripple-effect 0.6s linear;
+                pointer-events: none;
+            }
+
+            @keyframes ripple-effect {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        </style>
+    </head>
+    <body class="font-poppins bg-light text-dark dark:bg-dark dark:text-light transition-colors duration-300">
+
+        <!-- Custom Cursor -->
+        <div class="custom-cursor-dot hidden lg:block"></div>
+        <div class="custom-cursor-outline hidden lg:block"></div>
+
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-primary text-white transition-opacity duration-500">
+            <div class="w-16 h-16 border-4 border-accent border-t-transparent rounded-full animate-spin mb-4"></div>
+            <h2 class="text-2xl font-bold tracking-wider">PT. JAWARA PANDU BHAKTI</h2>
+            <p class="text-sm text-accent mt-1">Loading Excellence...</p>
+        </div>
+
+        <!-- Scroll Progress Bar -->
+        <div class="fixed top-0 left-0 h-1 bg-accent z-50 transition-all duration-150" id="scroll-progress"></div>
+
+        <!-- Header / Navbar -->
+        <header id="navbar" class="fixed top-0 left-0 w-full z-40 transition-all duration-300 py-4 px-6 lg:px-12 bg-transparent">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <!-- Logo -->
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <!-- Ganti div teks JP dengan tag img di bawah ini -->
+                    <div class="w-10 h-10 rounded-xl overflow-hidden shadow-lg group-hover:scale-105 transition-transform">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E0BAQGUSzj_aqfkuQ/company-logo_200_200/company-logo_200_200/0/1689676141136/pt_jawara_pandu_bhakti_logo?e=2147483647&v=beta&t=GPvXcFywaZ-k1sC3iJjlYg0-uAZWpfjr-GXJDUXqEjg" alt="Logo Jawara" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="flex flex-col">
+                        <span class="text-lg font-bold tracking-tight text-white dark:text-white nav-text drop-shadow-md">JAWARA PANDU BHAKTI</span>
+                        <span class="text-[10px] uppercase tracking-widest text-accent font-semibold drop-shadow-sm">Workforce & Facility</span>
+                    </div>
+                </a>
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="#beranda" class="text-sm font-medium text-white nav-link hover:text-accent transition-colors drop-shadow">Beranda</a>
+                    <a href="#tentang" class="text-sm font-medium text-white nav-link hover:text-accent transition-colors drop-shadow">Tentang Kami</a>
+                    <a href="#layanan" class="text-sm font-medium text-white nav-link hover:text-accent transition-colors drop-shadow">Layanan</a>
+                    <a href="#legalitas" class="text-sm font-medium text-white nav-link hover:text-accent transition-colors drop-shadow">Legalitas</a>
+                    <a href="#klien" class="text-sm font-medium text-white nav-link hover:text-accent transition-colors drop-shadow">Klien</a>
+                    <a href="#karir" class="text-sm font-medium text-white nav-link hover:text-accent transition-colors drop-shadow">Karir</a>
+                    <a href="#galeri" class="text-sm font-medium text-white nav-link hover:text-accent transition-colors drop-shadow">Galeri</a>
+                    <a href="#artikel" class="text-sm font-medium text-white nav-link hover:text-accent transition-colors drop-shadow">Artikel</a>
+                    <a href="#kontak" class="text-sm font-medium text-white nav-link hover:text-accent transition-colors drop-shadow">Kontak</a>
+                </nav>
+
+                <!-- Right Actions -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <!-- Dark Mode Toggle -->
+                    <button id="dark-mode-toggle" class="w-10 h-10 rounded-full flex items-center justify-center bg-white/10 dark:bg-white/5 hover:bg-secondary/20 transition-colors text-white dark:text-accent shadow-sm" aria-label="Toggle Dark Mode">
+                        <i class="fa-solid fa-moon dark:hidden"></i>
+                        <i class="fa-solid fa-sun hidden dark:block"></i>
+                    </button>
+                    <!-- CTA Button -->
+                    <a href="#kontak" class="px-6 py-2.5 rounded-full bg-primary hover:bg-secondary text-white font-medium text-sm shadow-lg shadow-primary/30 transition-all transform hover:-translate-y-0.5 ripple-btn">
+                        Hubungi Kami
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger -->
+                <div class="flex items-center gap-3 lg:hidden">
+                    <button id="mobile-dark-toggle" class="w-9 h-9 rounded-full flex items-center justify-center bg-white/10 text-white" aria-label="Toggle Dark Mode">
+                        <i class="fa-solid fa-moon dark:hidden"></i>
+                        <i class="fa-solid fa-sun hidden dark:block"></i>
+                    </button>
+                    <button id="hamburger-btn" class="w-10 h-10 rounded-lg flex flex-col items-center justify-center gap-1.5 focus:outline-none bg-white/10 text-white" aria-label="Menu">
+                        <span class="w-6 h-0.5 bg-white transition-transform duration-300 line-1"></span>
+                        <span class="w-6 h-0.5 bg-white transition-opacity duration-300 line-2"></span>
+                        <span class="w-6 h-0.5 bg-white transition-transform duration-300 line-3"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Overlay -->
+            <div id="mobile-menu" class="fixed inset-x-0 top-full bg-white dark:bg-dark shadow-2xl rounded-b-3xl p-6 transform -translate-y-full opacity-0 pointer-events-none transition-all duration-300 lg:hidden flex flex-col gap-4 border-t border-gray-100 dark:border-gray-800">
+                <a href="#beranda" class="mobile-nav-link text-base font-medium py-2 border-b border-gray-100 dark:border-gray-800">Beranda</a>
+                <a href="#tentang" class="mobile-nav-link text-base font-medium py-2 border-b border-gray-100 dark:border-gray-800">Tentang Kami</a>
+                <a href="#layanan" class="mobile-nav-link text-base font-medium py-2 border-b border-gray-100 dark:border-gray-800">Layanan</a>
+                <a href="#legalitas" class="mobile-nav-link text-base font-medium py-2 border-b border-gray-100 dark:border-gray-800">Legalitas</a>
+                <a href="#klien" class="mobile-nav-link text-base font-medium py-2 border-b border-gray-100 dark:border-gray-800">Klien</a>
+                <a href="#karir" class="mobile-nav-link text-base font-medium py-2 border-b border-gray-100 dark:border-gray-800">Karir</a>
+                <a href="#galeri" class="mobile-nav-link text-base font-medium py-2 border-b border-gray-100 dark:border-gray-800">Galeri</a>
+                <a href="#artikel" class="mobile-nav-link text-base font-medium py-2 border-b border-gray-100 dark:border-gray-800">Artikel</a>
+                <a href="#kontak" class="mobile-nav-link text-base font-medium py-2">Kontak</a>
+                <a href="#kontak" class="w-full py-3 text-center rounded-xl bg-primary text-white font-medium shadow-lg shadow-primary/30 mt-2">Hubungi Kami</a>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="beranda" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+            <!-- Background Image Fallback (Reliable Unsplash Corporate Office) -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920" alt="Modern Office" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-secondary/85 mix-blend-multiply"></div>
+                <div class="absolute inset-0 bg-black/40"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="relative z-10 max-w-7xl mx-auto px-6 text-center text-white py-20" data-aos="fade-up" data-aos-duration="1000">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md text-accent font-semibold text-xs uppercase tracking-widest mb-6 border border-white/20">
+                    PT. Jawara Pandu Bhakti Enterprise
+                </span>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                    ONE FLAG <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-secondary">ONE HEART</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-10 font-light">
+                    Mitra Profesional Penyedia Tenaga Kerja dan Facility Management Terbaik di Indonesia.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#kontak" class="w-full sm:w-auto px-8 py-4 rounded-full bg-accent hover:bg-secondary text-dark hover:text-white font-bold text-sm shadow-xl transition-all transform hover:-translate-y-1">
+                        Hubungi Kami
+                    </a>
+                    <a href="#layanan" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-bold text-sm border border-white/30 transition-all transform hover:-translate-y-1">
+                        Lihat Layanan
+                    </a>
+                </div>
+            </div>
+
+<!-- Scroll Indicator -->
+<div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 flex flex-col items-center text-white/70 animate-bounce">
+    <span class="text-xs uppercase tracking-widest mb-2">Scroll</span>
+    <i class="fa-solid fa-chevron-down text-sm"></i>
+</div>
+</section>
+
+<!-- Statistic Section -->
+<section class="relative z-20 max-w-7xl mx-auto px-6 -mt-16 md:-mt-20 mb-20">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 bg-white dark:bg-dark/95 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-gray-100 dark:border-gray-800" data-aos="fade-up" data-aos-duration="800">
+        <div class="flex flex-col items-center text-center p-4 border-r last:border-r-0 border-gray-100 dark:border-gray-800">
+            <span class="text-3xl md:text-5xl font-extrabold text-primary dark:text-accent mb-2"><span class="counter" data-target="19">0</span>+</span>
+            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">Tahun Pengalaman</span>
+        </div>
+        <div class="flex flex-col items-center text-center p-4 border-r last:border-r-0 border-gray-100 dark:border-gray-800">
+            <span class="text-3xl md:text-5xl font-extrabold text-primary dark:text-accent mb-2"><span class="counter" data-target="2000">0</span>+</span>
+            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">Tenaga Kerja</span>
+        </div>
+        <div class="flex flex-col items-center text-center p-4 border-r last:border-r-0 border-gray-100 dark:border-gray-800">
+            <span class="text-3xl md:text-5xl font-extrabold text-primary dark:text-accent mb-2"><span class="counter" data-target="100">0</span>+</span>
+            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">Client Korporat</span>
+        </div>
+        <div class="flex flex-col items-center text-center p-4">
+            <span class="text-3xl md:text-5xl font-extrabold text-primary dark:text-accent mb-2">24/7</span>
+            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">Support Layanan</span>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="tentang" class="py-20 px-6 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-800">
+                <img src="jawaranew.jpg">
+            </div>
+            <div class="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-3xl shadow-2xl hidden sm:block border-4 border-white dark:border-dark">
+                <span class="block text-3xl font-bold">100%</span>
+                <span class="text-xs uppercase tracking-wider text-accent">Legal & Bergaransi</span>
+            </div>
+        </div>
+
+        <div data-aos="fade-left" data-aos-duration="1000">
+            <span class="text-secondary font-semibold text-sm uppercase tracking-wider mb-2 block">Tentang Kami</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-dark dark:text-white mb-6 leading-snug">
+                Solusi Terpadu Penyedia Tenaga Kerja Profesional & Facility Management
+            </h2>
+            <p class="text-gray-600 dark:text-gray-300 mb-6 font-light leading-relaxed">
+                Jawara Pandu Bhakti telah berada di layanan fasilitas bisnis sejak tahun 2007, dan kami telah mendapatkan reputasi sebagai perusahaan jasa terintegrasi yang terpercaya. Kami bergerak dalam bidang pengadaan tenaga kerja (outsource) dan pemeliharaan fasilitas di berbagai sektor kebutuhan perusahaan.
+
+                Pertumbuhan Jawara Pandu Bhakti tidak lepas dari dukungan staff yang handal dan kompeten. Kami terus berkomitmen menjalin kerjasama yang saling menguntungkan dan berkesinambungan. Melalui motto "One Flag, One Heart" adalah dasar pelayanan kami ke perusahaan pengguna, dimana bidang usaha yang dipercayakan user kepada Jawara, kami lakukan dalam satu kesatuan pengelolaan yang utuh, teamwork dan semua berasal dari satu hati yang sama yaitu Jawara Pandu Bhakti.
+            </p>
+            <div class="mb-8">
+                <a href="#kontak" class="inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-primary hover:bg-secondary text-white font-medium text-sm shadow-lg shadow-primary/30 transition-all">
+                    Pelajari Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bagian Struktur Organisasi -->
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Struktur Organisasi Perusahaan Profesional</title>
+        <!-- Tailwind CSS for modern responsive styling -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- FontAwesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Google Fonts Inter -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Inter', sans-serif;
+                background-color: #f8fafc;
+                color: #1e293b;
+            }
+            /* Custom scrollbar for horizontal panning */
+            .chart-container::-webkit-scrollbar {
+                height: 8px;
+                width: 8px;
+            }
+            .chart-container::-webkit-scrollbar-track {
+                background: #f1f5f9;
+                border-radius: 4px;
+            }
+            .chart-container::-webkit-scrollbar-thumb {
+                background: #cbd5e1;
+                border-radius: 4px;
+            }
+            .chart-container::-webkit-scrollbar-thumb:hover {
+                background: #94a3b8;
+            }
+            /* Tambahkan di dalam <style> */
+            .left-chain-horizontal {
+              display: flex;
+              align-items: center;
+              gap: 24px; /* Jarak antar card (Komisaris -> Direktur -> GM) */
+          }
+          .line-horizontal {
+              width: 40px;
+              height: 4px;
+              background-color: #cbd5e1; /* Warna garis slate-300 */
+          }
+      </style>
+  </head>
+  <body class="min-h-screen flex flex-col">
+
+    <!-- Main Interactive Workspace -->
+    <main class="flex-1 p-4 md:p-8 overflow-auto chart-container relative flex items-center justify-start">
+        <div id="zoom-wrapper" class="transition-transform duration-200 origin-top-left py-12 px-6">
+
+            <!-- Org Chart Horizontal Structure -->
+            <div class="flex items-center space-x-12 min-w-max">
+
+                <!-- 1. PIMPINAN UTAMA (DIUBAH MENJADI MEMANJANG KE SAMPING / HORIZONTAL) -->
+                <div class="flex items-center space-x-6">
+
+                  <!-- Bungkus Komisaris, Direktur, dan GM dalam satu baris horizontal -->
+                  <div class="left-chain-horizontal">
+
+                    <!-- A. Komisaris Card -->
+                    <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-4 w-64 text-center relative hover:shadow-2xl transition duration-300 group">
+                      <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-amber-500 text-white-[18px] font-bold uppercase tracking-wider px-3 py-0.5 rounded-full shadow">
+                        Pengawas
+                    </div>
+                    <div class="pt-2">
+                        <div class="w-16 h-16 mx-auto mb-2 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center border border-amber-200 shadow-sm">
+                          <i class="fa-solid fa-user-shield text-base"></i>
+                      </div>
+                      <h3 class="font-bold text-slate-800 text-sm">Dewan Komisaris</h3>
+                      <p class="text-xs text-slate-500 mt-0.5 font-medium">Komisaris Utama & Anggota</p>
+                  </div>
+              </div>
+              <!-- Garis Penghubung Horizontal 1 (Komisaris ke Direktur) -->
+              <div class="line-horizontal"></div>
+
+              <!-- B. Direktur Card -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-800 text-white rounded-2xl shadow-xl border border-slate-700 p-5 w-72 text-center relative group">
+                  <!-- Contoh untuk Eksekutif Tertinggi -->
+                  <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-[10px] font-bold uppercase tracking-wid er px-3 py-0.5 rounded-full shadow-md whitespace-nowrap">
+                    Eksekutif Tertinggi
+                </div>
+                <div class="flex justify-center mb-3 mt-1">
+                    <div class="relative w-16 h-16 overflow-hidden rounded-full border-2 border-blue-400 bg-slate-800 shadow-md">
+                      <img src="renaldy.jpg" alt="Revry" class="w-full h-full object-cover">
+                  </div>
+              </div>
+              <h3 class="font-bold text-base">RENALDY DHYAS ARIFIN</h3>
+              <p class="text-xs text-blue-300 font-medium mt-0.5">Direktur Perusahaan</p>
+          </div>
+
+          <!-- Garis Penghubung Horizontal 2 (Direktur ke GM) -->
+          <div class="line-horizontal"></div>
+
+          <!-- C. General Manager Card -->
+          <div class="bg-gradient-to-b from-slate-900 to-slate-800 text-white rounded-2xl shadow-xl border border-slate-700 p-5 w-72 text-center relative group">
+              <!-- Contoh untuk Manajemen Operasional -->
+              <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-cyan-600 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-0.5 rounded-full shadow-md whitespace-nowrap">
+                Manajemen Operasional
+            </div>
+            <div class="flex justify-center mb-3 mt-1">
+                <div class="relative w-16 h-16 overflow-hidden rounded-full border-2 border-cyan-400 bg-slate-800 shadow-md">
+                  <!-- Sesuaikan path gambar GM jika ada -->
+                  <img src="indri.jpg" alt="Indria" class="w-full h-full object-cover">
+              </div>
+          </div>
+          <h3 class="font-bold text-base">INDRIA MAHAYANI</h3>
+          <p class="text-xs text-cyan-300 font-medium mt-0.5">General Manager</p>
+      </div>
+
+  </div> <!-- Penutup left-chain-horizontal -->
+
+  <!-- Garis Utama yang menghubungkan rantai GM ke Divisi-divisi di sebelah kanan -->
+  <div class="w-8 h-1 bg-slate-300"></div>
+
+</div>
+
+<!-- Main Horizontal Splitter Line Area -->
+<div class="flex items-center">
+    <div class="w-8 h-1 bg-slate-300"></div>
+</div>
+
+<!-- 4 CABANG UTAMA (KANAN) -->
+<div class="flex flex-col space-y-8">
+
+    <!-- CABANG 1: BUSINESS & DEVELOPMENT -->
+    <div class="flex items-center space-x-6">
+        <!-- Cabang Line Connector -->
+        <div class="w-8 h-1 bg-blue-500"></div>
+
+        <!-- Pimpinan Cabang 1 -->
+        <div class="bg-white rounded-2xl shadow-lg border-2 border-blue-500 p-4 w-60 text-center relative group">
+            <div class="absolute -top-3 left-4 bg-blue-600 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded shadow">
+                Divisi Bisnis
+            </div>
+            <div class="relative w-14 h-14 mx-auto mb-3 mt-1 overflow-hidden rounded-full border-2 border-blue-500 bg-slate-100 shadow">
+                <img src="tri.jpg" alt="Tri Yudi" class="w-full h-full object-cover">
+            </div>
+            <h4 class="font-bold text-slate-800 text-sm">Tri Yudi</h4>
+            <p class="text-xs text-blue-600 font-semibold mt-0.5">Bussines & Development</p>
+        </div>
+
+        <!-- Connector to members -->
+        <div class="w-6 h-0.5 bg-slate-300"></div>
+
+        <!-- Anggota Cabang 1 (2 Orang: Vebby & Samuel A.) -->
+        <div class="flex flex-col space-y-3">
+            <!-- Vebby -->
+            <div class="bg-white rounded-xl shadow border border-slate-200 p-3 w-52 flex items-center space-x-3 hover:border-blue-300 transition">
+                <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 flex-shrink-0 border border-slate-300">
+                    <img src="yovita.jpg" alt="Vebby" class="w-full h-full object-cover">
+                </div>
+                <div class="overflow-hidden">
+                    <h5 class="font-bold text-slate-800 text-xs truncate">YOVITA</h5>
+                    <p class="text-[11px] text-slate-500 truncate">Marketing</p>
+                </div>
+            </div>
+            <!-- Samuel A. -->
+            <div class="bg-white rounded-xl shadow border border-slate-200 p-3 w-52 flex items-center space-x-3 hover:border-blue-300 transition">
+                <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 flex-shrink-0 border border-slate-300">
+                    <img src="samsul.jpg" alt="Samuel A" class="w-full h-full object-cover">
+                </div>
+                <div class="overflow-hidden">
+                    <h5 class="font-bold text-slate-800 text-xs truncate">Samsul A.</h5>
+                    <p class="text-[11px] text-slate-500 truncate">Marketing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CABANG 2: OPERASIONAL & KEUANGAN -->
+    <div class="flex items-center space-x-6">
+        <!-- Cabang Line Connector -->
+        <div class="w-8 h-1 bg-indigo-500"></div>
+
+        <!-- Pimpinan Cabang 2 -->
+        <div class="bg-white rounded-2xl shadow-lg border-2 border-indigo-500 p-4 w-60 text-center relative group">
+            <div class="absolute -top-3 left-4 bg-indigo-600 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded shadow">
+                DIVISI OPERASIONAL
+            </div>
+            <div class="relative w-14 h-14 mx-auto mb-3 mt-1 overflow-hidden rounded-full border-2 border-indigo-500 bg-slate-100 shadow">
+                <img src="nadim.jpg" alt="Nardim" class="w-full h-full object-cover">
+            </div>
+            <h4 class="font-bold text-slate-800 text-sm">Nadim</h4>
+            <p class="text-xs text-indigo-600 font-semibold mt-0.5">Manager Operasional</p>
+        </div>
+
+        <!-- Connector to members -->
+        <div class="w-6 h-0.5 bg-slate-300"></div>
+
+        <!-- Anggota Cabang 2 (6 Orang Utama sesuai sketsa + sub divisi) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <!-- Dimas S. -->
+            <div class="bg-white rounded-xl shadow border border-slate-200 p-3 w-52 flex items-center space-x-3 hover:border-indigo-300 transition">
+                <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 flex-shrink-0 border border-slate-300">
+                    <img src="https://placehold.co/100x100/e2e8f0/475569?text=DS" alt="Dimas S" class="w-full h-full object-cover">
+                </div>
+                <div class="overflow-hidden">
+                    <h5 class="font-bold text-slate-800 text-xs truncate">Adimulyo</h5>
+                    <p class="text-[11px] text-slate-500 truncate">Operasional</p>
+                </div>
+            </div>
+            <!-- Satrio P. -->
+            <div class="bg-white rounded-xl shadow border border-slate-200 p-3 w-52 flex items-center space-x-3 hover:border-indigo-300 transition">
+                <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 flex-shrink-0 border border-slate-300">
+                    <img src="suduwi.jpg" alt="Satrio P" class="w-full h-full object-cover">
+                </div>
+                <div class="overflow-hidden">
+                    <h5 class="font-bold text-slate-800 text-xs truncate">Suduwi</h5>
+                    <p class="text-[11px] text-slate-500 truncate">Operasional</p>
+                </div>
+            </div>
+            <!-- Septian E. -->
+            <div class="bg-white rounded-xl shadow border border-slate-200 p-3 w-52 flex items-center space-x-3 hover:border-indigo-300 transition">
+                <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 flex-shrink-0 border border-slate-300">
+                    <img src="suratmo.jpg" alt="Septian E" class="w-full h-full object-cover">
+                </div>
+                <div class="overflow-hidden">
+                    <h5 class="font-bold text-slate-800 text-xs truncate">Suratmo</h5>
+                    <p class="text-[11px] text-slate-500 truncate">Operasional</p>
+                </div>
+            </div>
+            <!-- Deny A. -->
+            <div class="bg-white rounded-xl shadow border border-slate-200 p-3 w-52 flex items-center space-x-3 hover:border-indigo-300 transition">
+                <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 flex-shrink-0 border border-slate-300">
+                    <img src="sepuluhnew.jpeg" alt="Deny A" class="w-full h-full object-cover">
+                </div>
+                <div class="overflow-hidden">
+                    <h5 class="font-bold text-slate-800 text-xs truncate">Sepuluh</h5>
+                    <p class="text-[11px] text-slate-500 truncate">Operasional</p>
+                </div>
+            </div>
+            <!-- Deny A. -->
+            <div class="bg-white rounded-xl shadow border border-slate-200 p-3 w-52 flex items-center space-x-3 hover:border-indigo-300 transition">
+                <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 flex-shrink-0 border border-slate-300">
+                    <img src="kusaeni.jpg" alt="Deny A" class="w-full h-full object-cover">
+                </div>
+                <div class="overflow-hidden">
+                    <h5 class="font-bold text-slate-800 text-xs truncate">Kusaeni</h5>
+                    <p class="text-[11px] text-slate-500 truncate">Operasional</p>
+                </div>
+            </div>
+            <!-- Staff Tambahan ke-5 (Bayu S. / Support) -->
+            <div class="bg-white rounded-xl shadow border border-slate-200 p-3 w-52 flex items-center space-x-3 hover:border-indigo-300 transition">
+                <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 flex-shrink-0 border border-slate-300">
+                    <img src="kaselan.jpg" alt="Bayu S" class="w-full h-full object-cover">
+                </div>
+                <div class="overflow-hidden">
+                    <h5 class="font-bold text-slate-800 text-xs truncate">Kaselan</h5>
+                    <p class="text-[11px] text-slate-500 truncate">Operasional</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CABANG 3: PAYROLL / KEUANGAN -->
+    <div class="flex items-center space-x-6">
+        <!-- Cabang Line Connector -->
+        <div class="w-8 h-1 bg-emerald-500"></div>
+
+        <!-- Pimpinan Cabang 3 -->
+        <div class="bg-white rounded-2xl shadow-lg border-2 border-emerald-500 p-4 w-60 text-center relative group">
+            <div class="absolute -top-3 left-4 bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded shadow">
+                Divisi Finance
+            </div>
+            <div class="relative w-14 h-14 mx-auto mb-3 mt-1 overflow-hidden rounded-full border-2 border-emerald-500 bg-slate-100 shadow">
+                <img src="ivanew.jpeg" alt="Payroll Lead" class="w-full h-full object-cover">
+            </div>
+            <h4 class="font-bold text-slate-800 text-sm">NUR CHOLIFAH</h4>
+            <p class="text-xs text-emerald-600 font-semibold mt-0.5">Finance</p>
+        </div>
+
+        <!-- Connector to members -->
+        <div class="w-6 h-0.5 bg-slate-300"></div>
+
+        <!-- Anggota Cabang 3 (2 Orang: Lutfi T. & Widi) -->
+        <div class="flex flex-col space-y-3">
+            <!-- Lutfi T. -->
+            <div class="bg-white rounded-xl shadow border border-slate-200 p-3 w-52 flex items-center space-x-3 hover:border-emerald-300 transition">
+                <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 flex-shrink-0 border border-slate-300">
+                    <img src="deni.jpeg" alt="Lutfi T" class="w-full h-full object-cover">
+                </div>
+                <div class="overflow-hidden">
+                    <h5 class="font-bold text-slate-800 text-xs truncate">Deny Nartarika</h5>
+                    <p class="text-[11px] text-slate-500 truncate">AR Staff</p>
+                </div>
+            </div>
+            <!-- Widi -->
+            <div class="bg-white rounded-xl shadow border border-slate-200 p-3 w-52 flex items-center space-x-3 hover:border-emerald-300 transition">
+                <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 flex-shrink-0 border border-slate-300">
+                    <img src="garfild.jpg" alt="Widi" class="w-full h-full object-cover">
+                </div>
+                <div class="overflow-hidden">
+                    <h5 class="font-bold text-slate-800 text-xs truncate">Garfild Posumah</h5>
+                    <p class="text-[11px] text-slate-500 truncate">Acc & Tax</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CABANG 4: HR & GENERAL AFFAIRS -->
+    <div class="flex items-center space-x-6">
+        <!-- Cabang Line Connector -->
+        <div class="w-8 h-1 bg-violet-500"></div>
+
+        <!-- Pimpinan Cabang 4 -->
+        <div class="bg-white rounded-2xl shadow-lg border-2 border-violet-500 p-4 w-60 text-center relative group">
+            <div class="absolute -top-3 left-4 bg-violet-600 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded shadow">
+                Divisi Pendukung
+            </div>
+            <div class="relative w-14 h-14 mx-auto mb-3 mt-1 overflow-hidden rounded-full border-2 border-violet-500 bg-slate-100 shadow">
+                <img src="vindi.jpg" alt="HR Lead" class="w-full h-full object-cover">
+            </div>
+            <h4 class="font-bold text-slate-800 text-sm">Vindi Desendriana Pertiwi</h4>
+            <p class="text-xs text-violet-600 font-semibold mt-0.5">HRD & Legal</p>
+        </div>
+
+        <!-- Connector to members -->
+        <div class="w-6 h-0.5 bg-slate-300"></div>
+
+        <!-- Anggota Cabang 4 (2 Orang: Musa & Rekan Terkait) -->
+        <div class="flex flex-col space-y-3">
+            <!-- Musa -->
+            <div class="bg-white rounded-xl shadow border border-slate-200 p-3 w-52 flex items-center space-x-3 hover:border-violet-300 transition">
+                <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 flex-shrink-0 border border-slate-300">
+                    <img src="lutfi.jpg" alt="Musa" class="w-full h-full object-cover">
+                </div>
+                <div class="overflow-hidden">
+                    <h5 class="font-bold text-slate-800 text-xs truncate">Lutfi Triana</h5>
+                    <p class="text-[11px] text-slate-500 truncate">Payroll</p>
+                </div>
+            </div>
+            <!-- Rekan Terkait (Legal Staff / GA) -->
+            <div class="bg-white rounded-xl shadow border border-slate-200 p-3 w-52 flex items-center space-x-3 hover:border-violet-300 transition">
+                <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 flex-shrink-0 border border-slate-300">
+                    <img src="widi.jpg"GA Staff" class="w-full h-full object-cover">
+                </div>
+                <div class="overflow-hidden">
+                    <h5 class="font-bold text-slate-800 text-xs truncate">Widi Astuti</h5>
+                    <p class="text-[11px] text-slate-500 truncate">Payroll</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow border border-slate-200 p-3 w-52 flex items-center space-x-3 hover:border-violet-300 transition">
+                <div class="w-10 h-10 rounded-full overflow-hidden border border-slate-300">
+                    <img src="musa.jpeg" alt="Anggota 3" class="w-full h-full object-cover">
+                </div>
+                <div class="overflow-hidden">
+                    <h5 class="font-bold text-slate-800 text-xs truncate">Musa</h5>
+                    <p class="text-[11px] text-slate-500 truncate">Recrutment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</main>
+
+<!-- JavaScript for Zoom and Pan interactions -->
+<script>
+    let currentZoom = 1;
+    const zoomWrapper = document.getElementById('zoom-wrapper');
+
+    function zoomIn() {
+        if (currentZoom < 1.5) {
+            currentZoom += 0.1;
+            zoomWrapper.style.transform = `scale(${currentZoom})`;
+        }
+    }
+
+    function zoomOut() {
+        if (currentZoom > 0.6) {
+            currentZoom -= 0.1;
+            zoomWrapper.style.transform = `scale(${currentZoom})`;
+        }
+    }
+
+    function resetZoom() {
+        currentZoom = 1;
+        zoomWrapper.style.transform = `scale(1)`;
+    }
+
+        // Enable smooth dragging / panning with mouse on the container
+    const container = document.querySelector('.chart-container');
+    let isDown = false;
+    let startX, startY, scrollLeft, scrollTop;
+
+    container.addEventListener('mousedown', (e) => {
+        isDown = true;
+        container.classList.add('cursor-grabbing');
+        startX = e.pageX - container.offsetLeft;
+        startY = e.pageY - container.offsetTop;
+        scrollLeft = container.scrollLeft;
+        scrollTop = container.scrollTop;
+    });
+
+    container.addEventListener('mouseleave', () => {
+        isDown = false;
+        container.classList.remove('cursor-grabbing');
+    });
+
+    container.addEventListener('mouseup', () => {
+        isDown = false;
+        container.classList.remove('cursor-grabbing');
+    });
+
+    container.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - container.offsetLeft;
+        const y = e.pageY - container.offsetTop;
+        const walkX = (x - startX) * 1.5;
+        const walkY = (y - startY) * 1.5;
+        container.scrollLeft = scrollLeft - walkX;
+        container.scrollTop = scrollTop - walkY;
+    });
+</script>
+</body>
+<!-- Contoh pada container penutup struktur organisasi -->
+<div class="mb-20"> <!-- Tambahkan class mb-20 atau mb-24 di sini -->
+    <!-- Kode struktur organisasi Anda berakhir di sini -->
+<!-- 1. Pengadaan Tenaga Kerja -->
+<div onclick="openServiceModal('Pengadaan Tenaga Kerja', 'Guna meningkatkan produktivitas serta kinerja perusahaan, tentunya sumber daya manusia yang produktif, disiplin, dan terampil akan sangat mutlak dibutuhkan. Jawara juga menyadari betapa pentingnya bagi pelanggan untuk bisa berkonsentrasi dan fokus terhadap bisnis utamanya, untuk itu kami dari Jawara, akan membantu pelanggan yang membutuhkan SDM sebagai sarana penunjang produktifitas serta kinerja perusahaan dengan standar seleksi ketat dan profesional.', 'fa-user-shield')" class="bg-white dark:bg-dark/80 backdrop-blur-sm p-8 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-none border border-gray-100 dark:border-gray-800 hover:-translate-y-2 transition-all duration-300 group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+    <div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary dark:text-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+        <i class="fa-solid fa-user-shield"></i>
+    </div>
+    <h3 class="text-xl font-bold mb-3 text-dark dark:text-white">Pengadaan Tenaga Kerja</h3>
+    <p class="text-gray-600 dark:text-gray-400 text-sm font-light mb-6 leading-relaxed line-clamp-3">Guna meningkatkan produktivitas serta kinerja perusahaan, tentunya sumber daya manusia yang produktif, disiplin, dan terampil akan sangat mutlak dibutuhkan...</p>
+    <span class="inline-flex items-center gap-2 text-primary dark:text-accent font-semibold text-sm group-hover:gap-3 transition-all duration-200">
+        Tekan untuk Detail <i class="fa-solid fa-arrow-right text-xs"></i>
+    </span>
+</div>
+
+<!-- 2. Layanan Keamanan -->
+<div onclick="openServiceModal('Layanan Keamanan (Security Service)', 'Rasa aman adalah kebutuhan bagi setiap manusia dalam melaksanakan kehidupan baik secara individu maupun bermasyarakat. Dengan terjaminnya perasaan aman maka setiap individu dan kelompok sosial/masyarakat akan dapat menjalankan aktivitas atau kegiatan dengan baik. Personil security kami telah dibekali Diklat resmi (Gada Pratama/Madya) serta terlatih siaga menghadapi berbagai situasi.', 'fa-shield-halved')" class="bg-white dark:bg-dark/80 backdrop-blur-sm p-8 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-none border border-gray-100 dark:border-gray-800 hover:-translate-y-2 transition-all duration-300 group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+    <div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary dark:text-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+        <i class="fa-solid fa-shield-halved"></i>
+    </div>
+    <h3 class="text-xl font-bold mb-3 text-dark dark:text-white">Layanan Keamanan</h3>
+    <p class="text-gray-600 dark:text-gray-400 text-sm font-light mb-6 leading-relaxed line-clamp-3">Rasa aman adalah kebutuhan bagi setiap manusia dalam melaksanakan kehidupan baik secara individu maupun bermasyarakat...</p>
+    <span class="inline-flex items-center gap-2 text-primary dark:text-accent font-semibold text-sm group-hover:gap-3 transition-all duration-200">
+        Tekan untuk Detail <i class="fa-solid fa-arrow-right text-xs"></i>
+    </span>
+</div>
+
+<!-- 3. Jasa Kebersihan -->
+<div onclick="openServiceModal('Jasa Kebersihan (Cleaning Service)', 'Lingkungan kerja yang bersih dan sehat tidak hanya prasyarat untuk lingkungan fungsional, tetapi juga dasar untuk kesehatan dan produktivitas karyawan. Jawara Pandu Bhakti telah menetapkan dan selalu menyesuaikan standar baru dalam layanan kebersihan dengan menawarkan solusi dan metode pembersihan yang efektif dan efisien menggunakan peralatan modern.', 'fa-broom')" class="bg-white dark:bg-dark/80 backdrop-blur-sm p-8 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-none border border-gray-100 dark:border-gray-800 hover:-translate-y-2 transition-all duration-300 group cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+    <div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary dark:text-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+        <i class="fa-solid fa-broom"></i>
+    </div>
+    <h3 class="text-xl font-bold mb-3 text-dark dark:text-white">Jasa Kebersihan</h3>
+    <p class="text-gray-600 dark:text-gray-400 text-sm font-light mb-6 leading-relaxed line-clamp-3">Lingkungan kerja yang bersih dan sehat tidak hanya prasyarat untuk lingkungan fungsional, tetapi juga dasar untuk kesehatan...</p>
+    <span class="inline-flex items-center gap-2 text-primary dark:text-accent font-semibold text-sm group-hover:gap-3 transition-all duration-200">
+        Tekan untuk Detail <i class="fa-solid fa-arrow-right text-xs"></i>
+    </span>
+</div>
+
+<!-- 4. Rental dan Sewa Mobil -->
+<div onclick="openServiceModal('Rental dan Sewa Mobil (JPB Rent Car)', 'Jawara Pandu Bhakti mengembangkan unit bisnis baru dibidang jasa pelayanan dan persewaan mobil yang berada di wilayah pulau Jawa. JPB Rent Car melayani penyewaan mobil baik lepas kunci atau dengan driver profesional. Dioperasikan secara profesional dengan tarif dan layanan terbaik di bidangnya untuk mendukung mobilitas korporat Anda.', 'fa-van-shuttle')" class="bg-white dark:bg-dark/80 backdrop-blur-sm p-8 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-none border border-gray-100 dark:border-gray-800 hover:-translate-y-2 transition-all duration-300 group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+    <div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary dark:text-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+        <i class="fa-solid fa-van-shuttle"></i>
+    </div>
+    <h3 class="text-xl font-bold mb-3 text-dark dark:text-white">Rental dan Sewa Mobil</h3>
+    <p class="text-gray-600 dark:text-gray-400 text-sm font-light mb-6 leading-relaxed line-clamp-3">Jawara Pandu Bhakti mengembangkan unit bisnis baru dibidang jasa pelayanan dan persewaan mobil yang berada di wilayah pulau Jawa...</p>
+    <span class="inline-flex items-center gap-2 text-primary dark:text-accent font-semibold text-sm group-hover:gap-3 transition-all duration-200">
+        Tekan untuk Detail <i class="fa-solid fa-arrow-right text-xs"></i>
+    </span>
+</div>
+
+<!-- 5. Perawatan Taman -->
+<div onclick="openServiceModal('Perawatan Taman (Landscaping & Gardening)', 'Taman depan rumah hingga pembangunan fasilitas umum seperti perkantoran, rumah sakit, sekolah, dan kampus yang semakin meningkat membuat kebutuhan tanaman hias sebagai penyejuk suasana juga meningkat. Jawara Pandu Bhakti merancang jasa landscaping dan gardening untuk memberikan pelayanan taman terbaik bagi klien dengan profesionalitas tinggi.', 'fa-seedling')" class="bg-white dark:bg-dark/80 backdrop-blur-sm p-8 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-none border border-gray-100 dark:border-gray-800 hover:-translate-y-2 transition-all duration-300 group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+    <div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary dark:text-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+        <i class="fa-solid fa-seedling"></i>
+    </div>
+    <h3 class="text-xl font-bold mb-3 text-dark dark:text-white">Perawatan Taman</h3>
+    <p class="text-gray-600 dark:text-gray-400 text-sm font-light mb-6 leading-relaxed line-clamp-3">Taman depan rumah hingga pembangunan fasilitas umum seperti perkantoran, rumah sakit, sekolah, kampus...</p>
+    <span class="inline-flex items-center gap-2 text-primary dark:text-accent font-semibold text-sm group-hover:gap-3 transition-all duration-200">
+        Tekan untuk Detail <i class="fa-solid fa-arrow-right text-xs"></i>
+    </span>
+</div>
+
+<!-- 6. Layanan Parkir -->
+<div onclick="openServiceModal('Layanan Parkir (Parking Management)', 'Kami hadir untuk memberikan solusi parkir modern dan efisien bagi berbagai sektor seperti perkantoran, pusat perbelanjaan, rumah sakit, hotel, bandara, dan tempat-tempat publik lainnya. Dengan pengalaman bertahun-tahun, kami berkomitmen memberikan pelayanan berkualitas, aman, tertib, dan sistem manajemen parkir terintegrasi.', 'fa-square-parking')" class="bg-white dark:bg-dark/80 backdrop-blur-sm p-8 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-none border border-gray-100 dark:border-gray-800 hover:-translate-y-2 transition-all duration-300 group cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+    <div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary dark:text-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+        <i class="fa-solid fa-square-parking"></i>
+    </div>
+    <h3 class="text-xl font-bold mb-3 text-dark dark:text-white">Layanan Parkir</h3>
+    <p class="text-gray-600 dark:text-gray-400 text-sm font-light mb-6 leading-relaxed line-clamp-3">Kami hadir untuk memberikan solusi parkir modern dan efisien bagi berbagai sektor seperti perkantoran, pusat perbelanjaan...</p>
+    <span class="inline-flex items-center gap-2 text-primary dark:text-accent font-semibold text-sm group-hover:gap-3 transition-all duration-200">
+        Tekan untuk Detail <i class="fa-solid fa-arrow-right text-xs"></i>
+    </span>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Pop-up Modal untuk Detail Layanan -->
+<div id="service-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white dark:bg-dark w-full max-w-lg rounded-3xl p-8 shadow-2xl border border-gray-100 dark:border-gray-800 relative transform transition-all scale-95 opacity-0" id="service-modal-content">
+        <button onclick="closeServiceModal()" class="absolute top-6 right-6 w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-dark dark:text-white hover:bg-primary hover:text-white transition-colors">
+            <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+        <div class="w-16 h-16 rounded-2xl bg-primary/10 text-primary dark:text-accent flex items-center justify-center text-3xl mb-6" id="modal-icon">
+            <i class="fa-solid fa-user-shield"></i>
+        </div>
+        <h3 id="modal-title" class="text-2xl font-bold mb-4 text-dark dark:text-white">Nama Layanan</h3>
+        <p id="modal-desc" class="text-gray-600 dark:text-gray-300 text-sm font-light leading-relaxed mb-8">Penjelasan lengkap layanan...</p>
+        <div class="flex gap-4">
+            <a href="#kontak" onclick="closeServiceModal()" class="flex-1 py-3.5 rounded-xl bg-primary hover:bg-secondary text-white font-medium text-sm text-center shadow-lg transition-all">
+                Pesan Layanan Ini
+            </a>
+            <button onclick="closeServiceModal()" class="px-6 py-3.5 rounded-xl bg-gray-100 dark:bg-gray-800 text-dark dark:text-white font-medium text-sm hover:bg-gray-200 transition-colors">
+                Tutup
+            </button>
+        </div>
+    </div>
+</div>
+<!-- Why Choose Us -->
+<section class="py-20 px-6 max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-secondary font-semibold text-sm uppercase tracking-wider mb-2 block">Keunggulan Kami</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-dark dark:text-white mb-4">Mengapa Memilih PT. Jawara Pandu Bhakti?</h2>
+        <p class="text-gray-600 dark:text-gray-300 text-sm font-light">Kami memberikan jaminan kualitas dan ketenangan pikiran bagi seluruh mitra bisnis kami.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white dark:bg-dark/50 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 flex items-start gap-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-12 h-12 rounded-2xl bg-primary text-white flex-shrink-0 flex items-center justify-center text-xl shadow-lg">
+                <i class="fa-solid fa-award"></i>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-2">Professional Team</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm font-light">SDM diseleksi ketat dan melalui pelatihan berstandar tinggi.</p>
+            </div>
+        </div>
+        <div class="bg-white dark:bg-dark/50 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 flex items-start gap-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-12 h-12 rounded-2xl bg-primary text-white flex-shrink-0 flex items-center justify-center text-xl shadow-lg">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-2">Experienced</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm font-light">Berpengalaman lebih dari 19 tahun melayani berbagai sektor industri.</p>
+            </div>
+        </div>
+        <div class="bg-white dark:bg-dark/50 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 flex items-start gap-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="w-12 h-12 rounded-2xl bg-primary text-white flex-shrink-0 flex items-center justify-center text-xl shadow-lg">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-2">Fast Response</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm font-light">Respon cepat tanggap terhadap setiap kebutuhan maupun kendala klien.</p>
+            </div>
+        </div>
+        <div class="bg-white dark:bg-dark/50 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 flex items-start gap-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-12 h-12 rounded-2xl bg-primary text-white flex-shrink-0 flex items-center justify-center text-xl shadow-lg">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-2">National Coverage</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm font-light">Jaringan operasional luas menjangkau berbagai kota besar di Indonesia.</p>
+            </div>
+        </div>
+        <div class="bg-white dark:bg-dark/50 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 flex items-start gap-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-12 h-12 rounded-2xl bg-primary text-white flex-shrink-0 flex items-center justify-center text-xl shadow-lg">
+                <i class="fa-solid fa-file-contract"></i>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-2">Legal Company</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm font-light">Perusahaan berbadan hukum resmi dengan izin lengkap dan sesuai regulasi.</p>
+            </div>
+        </div>
+        <div class="bg-white dark:bg-dark/50 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 flex items-start gap-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="w-12 h-12 rounded-2xl bg-primary text-white flex-shrink-0 flex items-center justify-center text-xl shadow-lg">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-2">24 Hours Support</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm font-light">Layanan dukungan pelanggan siap sedia 24 jam penuh.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="py-20 px-6 bg-gray-50 dark:bg-dark/30">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+            <span class="text-secondary font-semibold text-sm uppercase tracking-wider mb-2 block">Alur Kerja</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-dark dark:text-white mb-4">Prosedur Penempatan Tenaga Kerja</h2>
+            <p class="text-gray-600 dark:text-gray-300 text-sm font-light">Sistem rekrutmen dan penempatan yang terstruktur dan transparan.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 relative" data-aos="fade-up">
+            <div class="bg-white dark:bg-dark p-6 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 relative">
+                <span class="text-3xl font-extrabold text-accent mb-4 block">01</span>
+                <h3 class="text-lg font-bold mb-2">Konsultasi</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-xs font-light">Diskusi mendalam mengenai kebutuhan spesifik perusahaan klien.</p>
+            </div>
+            <div class="bg-white dark:bg-dark p-6 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 relative">
+                <span class="text-3xl font-extrabold text-accent mb-4 block">02</span>
+                <h3 class="text-lg font-bold mb-2">Analisa</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-xs font-light">Analisis jabatan dan kualifikasi SDM yang dibutuhkan.</p>
+            </div>
+            <div class="bg-white dark:bg-dark p-6 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 relative">
+                <span class="text-3xl font-extrabold text-accent mb-4 block">03</span>
+                <h3 class="text-lg font-bold mb-2">Seleksi</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-xs font-light">Proses rekrutmen ketat, psikotes, dan interview mendalam.</p>
+            </div>
+            <div class="bg-white dark:bg-dark p-6 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 relative">
+                <span class="text-3xl font-extrabold text-accent mb-4 block">04</span>
+                <h3 class="text-lg font-bold mb-2">Training</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-xs font-light">Pelatihan khusus sesuai bidang kerja dan SOP perusahaan klien.</p>
+            </div>
+            <div class="bg-white dark:bg-dark p-6 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 relative">
+                <span class="text-3xl font-extrabold text-accent mb-4 block">05</span>
+                <h3 class="text-lg font-bold mb-2">Penempatan</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-xs font-light">Penempatan tenaga kerja siap pakai di lokasi kerja klien.</p>
+            </div>
+            <div class="bg-white dark:bg-dark p-6 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 relative">
+                <span class="text-3xl font-extrabold text-accent mb-4 block">06</span>
+                <h3 class="text-lg font-bold mb-2">Monitoring</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-xs font-light">Evaluasi kinerja berkala dan supervisi berkelanjutan.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Visi Misi Section -->
+<section class="py-20 px-6 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="bg-gradient-to-br from-primary to-secondary p-10 rounded-3xl text-white shadow-2xl relative overflow-hidden" data-aos="fade-right">
+            <div class="absolute -right-10 -bottom-10 text-white/10 text-9xl font-bold">
+                <i class="fa-solid fa-eye"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Visi Perusahaan</h3>
+            <p class="text-lg font-light leading-relaxed">
+                Mewujudkan Jawara Pandu Bhakti menjadi perusahaan terdepan dalam bidang jasa outsourcing yang berbasis pada kekuatan manajemen dan sumber daya manusia yang berkualitas dan professional.
+            </p>
+        </div>
+        <div class="bg-white dark:bg-dark/50 p-10 rounded-3xl shadow-2xl border border-gray-100 dark:border-gray-800 relative overflow-hidden" data-aos="fade-left">
+            <div class="absolute -right-10 -bottom-10 text-primary/5 dark:text-white/5 text-9xl font-bold">
+                <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-dark dark:text-white">Misi Perusahaan</h3>
+            <ul class="space-y-3 text-gray-600 dark:text-gray-300 font-light text-sm">
+                <li class="flex items-start gap-3"><i class="fa-solid fa-check text-accent mt-1"></i> Menciptakan lapangan kerja bagi masyarakat.</li>
+                <li class="flex items-start gap-3"><i class="fa-solid fa-check text-accent mt-1"></i> Melakukan pembinaan sumberdaya manusia secara continue dan komprehensif untuk memperoleh tenaga kerja yang siap dan handal.</li>
+                <li class="flex items-start gap-3"><i class="fa-solid fa-check text-accent mt-1"></i> Mengedepankan mutu pelayanan dengan kejujuran, loyalitas, motivasi dan disiplin tinggi dalam melaksankan tugas & tanggung jawab.</li>
+                <li class="flex items-start gap-3"><i class="fa-solid fa-check text-accent mt-1"></i> Mengutamakan kepentingan mitra bisnis dengan menjaga kepuasan & loyalitas.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Legalitas Section -->
+<section id="legalitas" class="py-20 px-6 bg-gray-50 dark:bg-dark/30">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+            <span class="text-secondary font-semibold text-sm uppercase tracking-wider mb-2 block">Legalitas Resmi</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-dark dark:text-white mb-4">Legalitas & Sertifikasi Perusahaan</h2>
+            <p class="text-gray-600 dark:text-gray-300 text-sm font-light">PT. Jawara Pandu Bhakti beroperasi secara sah sesuai dengan hukum dan perundang-undangan Republik Indonesia.</p>
+        </div>
+
+        <!-- Grid Kartu Legalitas yang Bisa Diklik Langsung -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-12" data-aos="fade-up">
+
+            <!-- NIB -->
+            <a href="NIBjpb.pdf" target="_blank" class="bg-white dark:bg-dark p-6 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 text-center block transition hover:scale-105">
+                <span class="text-2xl font-extrabold text-primary dark:text-accent mb-2 block">NIB</span>
+                <span class="text-xs text-gray-500">Nomor Induk Berusaha</span>
+            </a>
+
+            <!-- NPWP -->
+            <a href="AKTA.pdf" target="_blank" class="bg-white dark:bg-dark p-6 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 text-center block transition hover:scale-105">
+                <span class="text-2xl font-extrabold text-primary dark:text-accent mb-2 block">AKTA</span>
+                <span class="text-xs text-gray-500">Akta Pendiri</span>
+            </a>
+
+            <!-- SIUP -->
+            <a href="SPPKP.pdf" target="_blank" class="bg-white dark:bg-dark p-6 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 text-center block transition hover:scale-105">
+                <span class="text-2xl font-extrabold text-primary dark:text-accent mb-2 block">SPPKP</span>
+                <span class="text-xs text-gray-500">Surat Pengukuhan Pengusaha Kena Pajak </span>
+            </a>
+
+            <!-- BUJP -->
+            <a href="path/ke/file-bujp.pdf" target="_blank" class="bg-white dark:bg-dark p-6 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 text-center block transition hover:scale-105">
+                <span class="text-2xl font-extrabold text-primary dark:text-accent mb-2 block">BUJP</span>
+                <span class="text-xs text-gray-500">Sertifikat Badan Usaha Jasa Pengamanan</span>
+            </a>
+
+            <!-- ISO -->
+            <a href="sio.pdf" target="_blank" class="bg-white dark:bg-dark p-6 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 text-center block transition hover:scale-105">
+                <span class="text-2xl font-extrabold text-primary dark:text-accent mb-2 block">SIO</span>
+                <span class="text-xs text-gray-500">Surat Izin Operasional dari Kepolisian Negara Republik Indonesia </span>
+            </a>
+
+            <!-- AK3U -->
+            <a href="abujapi.pdf" target="_blank" class="bg-white dark:bg-dark p-6 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 text-center block transition hover:scale-105">
+                <span class="text-2xl font-extrabold text-primary dark:text-accent mb-2 block">ANGGOTA BUJP</span>
+                <span class="text-xs text-gray-500">Ahli K3 Umum</span>
+            </a>
+
+            <!-- ISO 2015 -->
+            <a href="ISO1.pdf" target="_blank" class="bg-white dark:bg-dark p-6 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 text-center block transition hover:scale-105">
+                <span class="text-2xl font-extrabold text-primary dark:text-accent mb-2 block">ISO 2015</span>
+                <span class="text-xs text-gray-500">ISO 9001:2015</span>
+            </a>
+
+            <!-- ISO 2018  -->
+            <a href="ISO2.pdf" target="_blank" class="bg-white dark:bg-dark p-6 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 text-center block transition hover:scale-105">
+                <span class="text-2xl font-extrabold text-primary dark:text-accent mb-2 block">ISO 2018</span>
+                <span class="text-xs text-gray-500">ISO 45001:2018</span>
+            </a>
+
+            <!-- ISO 2018  -->
+            <a href="compro.pdf" target="_blank" class="bg-white dark:bg-dark p-6 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 text-center block transition hover:scale-105">
+                <span class="text-2xl font-extrabold text-primary dark:text-accent mb-2 block">Company Profile</span>
+                <span class="text-xs text-gray-500">Compro</span>
+            </a>
+        </div>
+
+<!-- Dokumentasi Operasional & Pelatihan Section -->
+<section id="dokumentasi" class="py-24 px-6 bg-white dark:bg-dark relative overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+            <span class="text-secondary font-bold text-xs md:text-sm uppercase tracking-widest mb-3 px-4 py-1.5 rounded-full bg-secondary/10 inline-block">
+                Galeri Kegiatan
+            </span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-dark dark:text-white mb-4 tracking-tight">
+                Dokumentasi Operasional & Pelatihan
+            </h2>
+            <p class="text-gray-600 dark:text-gray-300 text-base font-light leading-relaxed">
+                Geser ke samping atau gunakan tombol panah untuk melihat aktivitas dan pelatihan profesional personil kami.
+            </p>
+        </div>
+
+        <!-- Slider Container -->
+        <div class="relative" data-aos="fade-up" data-aos-delay="200">
+
+            <!-- Tombol Navigasi Kiri -->
+            <button onclick="scrollSlider('left')" class="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 md:-ml-6 z-20 w-12 h-12 rounded-full bg-primary text-white shadow-xl flex items-center justify-center hover:bg-secondary transition-all duration-300 focus:outline-none">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <!-- Track / Daftar Foto (Bisa Digeser Horizontal) -->
+            <div id="photo-slider" class="flex gap-6 overflow-x-auto scroll-smooth pb-6 pt-2 px-2 no-scrollbar snap-x snap-mandatory">
+
+                <!-- Item Foto 1 -->
+                <div onclick="openLightbox('ft16.jpeg', 'Pelatihan Dasar Personil Keamanan (Security)')" class="min-w-[300px] md:min-w-[380px] flex-shrink-0 snap-start bg-gray-100 dark:bg-dark/80 rounded-3xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-800 cursor-pointer group">
+                    <div class="h-56 md:h-64 overflow-hidden relative bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
+                        <img src="ft16.jpeg" alt="Pelatihan Security" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item Foto 2 -->
+                <div onclick="openLightbox('fotbar_ld.jpeg', 'Staff PT. JAWARA PANDU BHAKTI')" class="min-w-[300px] md:min-w-[380px] flex-shrink-0 snap-start bg-gray-100 dark:bg-dark/80 rounded-3xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-800 cursor-pointer group">
+                    <div class="h-56 md:h-64 overflow-hidden relative bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
+                        <img src="fotbar_ld.jpeg" alt="Cleaning Service" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item Foto 3 -->
+                <div onclick="openLightbox('ft5.jpeg', 'Uji Kompetensi Security display PT. DOK PANTAI LAMONGAN')" class="min-w-[300px] md:min-w-[380px] flex-shrink-0 snap-start bg-gray-100 dark:bg-dark/80 rounded-3xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-800 cursor-pointer group">
+                    <div class="h-56 md:h-64 overflow-hidden relative bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
+                        <img src="ft5.jpeg" alt="Briefing" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item Foto 4 -->
+                <div onclick="openLightbox('hiace.jpeg', 'Persewaan Mobil hiAce')" class="min-w-[300px] md:min-w-[380px] flex-shrink-0 snap-start bg-gray-100 dark:bg-dark/80 rounded-3xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-800 cursor-pointer group">
+                    <div class="h-56 md:h-64 overflow-hidden relative bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
+                        <img src="hiace.jpeg" alt="Seminar K3" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item Foto 5 -->
+                <div onclick="openLightbox('tambang_landscape.jpeg', 'Kunjungan di PT. DOK PANTAI LAMONGAN')" class="min-w-[300px] md:min-w-[380px] flex-shrink-0 snap-start bg-gray-100 dark:bg-dark/80 rounded-3xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-800 cursor-pointer group">
+                    <div class="h-56 md:h-64 overflow-hidden relative bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
+                        <img src="tambang_landscape.jpeg" alt="Facility Management" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tombol Navigasi Kanan -->
+            <button onclick="scrollSlider('right')" class="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 md:-mr-6 z-20 w-12 h-12 rounded-full bg-primary text-white shadow-xl flex items-center justify-center hover:bg-secondary transition-all duration-300 focus:outline-none">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </div>
+    </div>
+</section>
+
+<!-- Tombol Navigasi Kanan -->
+<button onclick="scrollSlider('right')" class="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 md:-mr-6 z-20 w-12 h-12 rounded-full bg-primary text-white shadow-xl flex items-center justify-center hover:bg-secondary transition-all duration-300 focus:outline-none">
+    <i class="fa-solid fa-chevron-right"></i>
+</button>
+
+</div>
+</div>
+</section>
+
+<!-- Modal Lightbox (Tampilan Foto Besar Saat Ditekan) -->
+<div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="relative max-w-4xl w-full flex flex-col items-center">
+        <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-white hover:text-secondary text-2xl p-2 focus:outline-none">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="lightbox-img" src="" alt="Zoom Foto" class="max-h-[75vh] w-auto object-contain rounded-2xl shadow-2xl mb-4">
+        <p id="lightbox-caption" class="text-white text-center font-medium text-lg"></p>
+    </div>
+</div>
+
+<style>
+    /* Menyembunyikan scrollbar standar tapi tetap bisa digeser */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
+
+<!-- Client Section -->
+<section id="klien" class="py-20 px-6 bg-gray-50 dark:bg-dark/30 overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+            <span class="text-secondary font-semibold text-sm uppercase tracking-wider mb-2 block">Mitra Klien</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-dark dark:text-white mb-4">Dipercaya oleh Perusahaan Terkemuka</h2>
+            <p class="text-gray-600 dark:text-gray-300 text-sm font-light">Kebanggaan kami adalah menjadi bagian dari kesuksesan mitra korporat.</p>
+        </div>
+
+        <!-- Swiper Container -->
+        <div class="swiper client-swiper py-4">
+            <div class="swiper-wrapper items-center">
+
+                <!-- Item Card -->
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="https://images.seeklogo.com/logo-png/39/1/pt-gudang-garam-tbk-logo-png_seeklogo-392760.png" alt="GUDANG GARAM" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/KT%26G_Logo.svg/3840px-KT%26G_Logo.svg.png" alt="KT&G" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="https://www.dplamongan.co.id/id/wp-content/uploads/2023/09/logo-dpl-1.png" alt="DOK PANTAI LAMONGAN" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="https://i.ytimg.com/vi/dZ1fyTaLv48/maxresdefault.jpg" alt="SAMATOR" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzeqi4avHwsJBVbfkWLXZo57iNFjsxhgerbGl8Zk0zgFW8OJFzaAMxlqSu&s=10" alt="PRASAD SEEDS" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="https://www.static-src.com/wcsstore/Indraprastha/images/brandlogo//BRD-16659/esse-change-logo.jpg" alt="ESSE CHANGE" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTrXrP98Mw0qu2hb7t0dTUKwFQD7LMNhkyDQ5fdFJTew&s=10" alt="RS SIDO WARAS MJK" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt-8DQbQRTwWhTlVRyRu83Ljyq5_yM9_id0FZORNcVjf-WD3BTfVihxWy5&s=10" alt="KAI" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <!-- URL Diperbaiki (menghilangkan spasi pada ht tps) -->
+                        <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/53/Campina_Es_Krim.svg/1280px-Campina_Es_Krim.svg.png" alt="CAMPINA ES KRIM" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbErbczxnNw-A1moI-YHsTeimMo9HrnjfSTNMOYPYmjg&s" alt="TDS" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="https://www.muliaraya.co.id/uploads/logo/logo.png" alt="MULIA RAYA" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="coats.jpg" alt="COATS" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="bioseed.jpg" alt="BIOSEED" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="godrej.png" alt="GODREJ" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="songa.jpg" alt="SONGA" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="purindo.png" alt="Purindo" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="advanta.png" alt="Advanta" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="jayautama.png" alt="Jaya Utama" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <img src="revas.png" alt="REVASS" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <div class="w-full h-24 px-6 py-4 bg-white dark:bg-dark/80 rounded-xl shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800/60 transition-all duration-300 flex items-center justify-center group">
+                        <!-- Alt tag diperbaiki -->
+                        <img src="wahyu.png" alt="WAHYU" class="max-h-12 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimoni Section -->
+<section class="py-20 px-6 max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-secondary font-semibold text-sm uppercase tracking-wider mb-2 block">Testimoni Klien</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-dark 
+        DOK PANTAI LAMONGAN
+        SAMATOR
+        PRASAD SEEDS
+        ESSE CHANGE
+        RS SIDO WARAS MJK
+        dark:text-white mb-4">Apa Kata Mitra Kami?</h2>
+        <p class="text-gray-600 dark:text-gray-300 text-sm font-light">Kepuasan klien adalah bukti nyata kualitas pelayanan profesional kami.</p>
+    </div>
+
+    <div class="swiper testimonial-swiper pb-12" data-aos="fade-up">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide bg-white dark:bg-dark p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800">
+                <div class="flex items-center gap-1 text-yellow-400 mb-6">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 text-sm font-light mb-8 italic">"PT. Jawara Pandu Bhakti memberikan layanan security dan cleaning service yang sangat memuaskan. Respon cepat dan profesional."</p>
+                <div class="flex items-center gap-4">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" alt="Testi 1" class="w-12 h-12 rounded-full object-cover">
+                    <div>
+                        <h4 class="font-bold text-sm">Budi Santoso</h4>
+                        <span class="text-xs text-gray-500">HR Director, PT. Maju Bersama</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide bg-white dark:bg-dark p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800">
+                <div class="flex items-center gap-1 text-yellow-400 mb-6">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 text-sm font-light mb-8 italic">"Pengadaan tenaga kerja dari Jawara sangat membantu operasional pabrik kami. SDM disiplin dan memiliki etos kerja tinggi."</p>
+                <div class="flex items-center gap-4">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=150" alt="Testi 2" class="w-12 h-12 rounded-full object-cover">
+                    <div>
+                        <h4 class="font-bold text-sm">Siti Rahma</h4>
+                        <span class="text-xs text-gray-500">Operational Manager, PT. Industri Jaya</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- Karir Section -->
+<!-- News / Artikel section -->
+<section id="artikel" class="py-20 px-6 max-w-7xl mx-auto">
+  <!-- Judul Section -->
+  <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+    <span class="text-secondary font-semibold text-sm uppercase tracking-wider mb-2 block">Berita & Wawasan</span>
+    <h2 class="text-3xl md:text-4xl font-extrabold text-dark dark:text-white mb-4">Artikel Terbaru</h2>
+    <p class="text-gray-600 dark:text-gray-300 text-sm font-light">Informasi seputar dunia outsourcing dan manajemen fasilitas.</p>
+</div>
+
+<!-- Pembungkus Grid (Ini yang membuat kartu berjejer ke samping) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up">
+
+    <!-- KARTU ARTIKEL 1 -->
+    <div class="bg-white dark:bg-dark/50 rounded-3xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-800 flex flex-col justify-between group">
+      <div>
+        <a href="artikel-1.html" class="block overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600" alt="News 1" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+      </a>
+      <div class="p-8">
+          <span class="text-xs text-secondary font-semibold mb-2 block">15 Juli 2026 • Tips Karir</span>
+          <h3 class="text-lg font-bold mb-3">
+            <a href="artikel-1.html" class="hover:text-primary transition text-dark dark:text-white">Pentingnya Pelatihan K3 Bagi Tenaga Kerja Modern</a>
+        </h3>
+        <p class="text-gray-600 dark:text-gray-400 text-sm font-light mb-6 leading-relaxed">
+            Meningkatkan kesadaran keselamatan kerja di lingkungan pabrik dan perkantoran sangat penting untuk mencegah risiko kecelakaan. Melalui program pelatihan K3 secara berkala, karyawan dapat memahami SOP dengan lebih baik.
+        </p>
+    </div>
+</div>
+<div class="px-8 pb-8">
+    <a href="artikel-1.html" class="text-primary dark:text-accent font-semibold text-sm hover:underline inline-flex items-center gap-2">
+      Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+  </a>
+</div>
+</div>
+
+<!-- KARTU ARTIKEL 2 -->
+<div class="bg-white dark:bg-dark/50 rounded-3xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-800 flex flex-col justify-between group">
+  <div>
+    <a href="artikel-2.html" class="block overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600" alt="News 2" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+  </a>
+  <div class="p-8">
+      <span class="text-xs text-secondary font-semibold mb-2 block">10 Juli 2026 • Perusahaan</span>
+      <h3 class="text-lg font-bold mb-3">
+        <a href="artikel-2.html" class="hover:text-primary transition text-dark dark:text-white">Strategi Facility Management Efektif untuk Gedung Bertingkat</a>
+    </h3>
+    <p class="text-gray-600 dark:text-gray-400 text-sm font-light mb-6 leading-relaxed">
+        Optimalisasi pemeliharaan fasilitas gedung demi kenyamanan penyewa dan efisiensi operasional. Strategi ini mencakup perawatan berkala pada sistem kelistrikan, HVAC, dan pemantauan energi terpadu.
+    </p>
+</div>
+</div>
+<div class="px-8 pb-8">
+    <a href="artikel-2.html" class="text-primary dark:text-accent font-semibold text-sm hover:underline inline-flex items-center gap-2">
+      Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+  </a>
+</div>
+</div>
+
+<!-- KARTU ARTIKEL 3 -->
+<div class="bg-white dark:bg-dark/50 rounded-3xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-800 flex flex-col justify-between group">
+  <div>
+    <a href="artikel-3.html" class="block overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=600" alt="News 3" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+  </a>
+  <div class="p-8">
+      <span class="text-xs text-secondary font-semibold mb-2 block">05 Juli 2026 • Industri</span>
+      <h3 class="text-lg font-bold mb-3">
+        <a href="artikel-3.html" class="hover:text-primary transition text-dark dark:text-white">Masa Depan Industri Alih Daya di Era Digital</a>
+    </h3>
+    <p class="text-gray-600 dark:text-gray-400 text-sm font-light mb-6 leading-relaxed">
+        Transformasi teknologi dalam sistem rekrutmen dan manajemen tenaga kerja harian. Penggunaan platform digital pintar mempercepat penyaluran tenaga kerja yang berdedikasi dan terverifikasi.
+    </p>
+</div>
+</div>
+<div class="px-8 pb-8">
+    <a href="artikel-3.html" class="text-primary dark:text-accent font-semibold text-sm hover:underline inline-flex items-center gap-2">
+      Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+  </a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 px-6 max-w-7xl mx-auto">
+    <div class="bg-gradient-to-r from-primary to-secondary rounded-3xl p-10 md:p-16 text-white text-center shadow-2xl relative overflow-hidden" data-aos="fade-up">
+        <h2 class="text-3xl md:text-5xl font-extrabold mb-6">Siap Meningkatkan Efisiensi Perusahaan Anda?</h2>
+        <p class="text-lg text-gray-200 max-w-2xl mx-auto mb-8 font-light">Hubungi tim kami sekarang untuk mendapatkan konsultasi gratis mengenai kebutuhan tenaga kerja dan fasilitas.</p>
+        <a href="#kontak" class="inline-block px-10 py-4 rounded-full bg-accent hover:bg-white text-dark font-bold text-sm shadow-xl transition-all transform hover:-translate-y-1">
+            Hubungi Kami Sekarang
+        </a>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="kontak" class="py-20 px-6 bg-gray-50 dark:bg-dark/30">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+            <span class="text-secondary font-semibold text-sm uppercase tracking-wider mb-2 block">Kontak Kami</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-dark dark:text-white mb-4">Mari Berkolaborasi Bersama Kami</h2>
+            <p class="text-gray-600 dark:text-gray-300 text-sm font-light">Kirimkan pesan atau kunjungi kantor kami untuk informasi lebih lanjut.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div data-aos="fade-right">
+                <div class="space-y-6 mb-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center text-xl flex-shrink-0 shadow-lg">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-base mb-1">Alamat Kantor</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm font-light">Batumas Candra Asri Blok B4 No. 20, Pandaan, Pasuruan, Jawa Timur</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center text-xl flex-shrink-0 shadow-lg">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-base mb-1">Telepon</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm font-light">0343 – 634419</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center text-xl flex-shrink-0 shadow-lg">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-base mb-1">Email</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm font-light">jawarapandubhakti@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-xl h-72 border border-gray-100 dark:border-gray-800">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.322049868463!2d112.68472121101992!3d-7.648476592335863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d98d3253d24b%3A0xdb7f8494f50e4fa6!2sJawara%20Pandu%20Bhakti!5e0!3m2!1sid!2sid!4v1784691973677!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+
+            <div class="bg-white dark:bg-dark p-8 md:p-10 rounded-3xl shadow-2xl border border-gray-100 dark:border-gray-800" data-aos="fade-left">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Nama Lengkap</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-dark/50 border border-gray-200 dark:border-gray-700 focus:outline-none focus:border-primary text-sm" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Email</label>
+                        <input type="email" required class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-dark/50 border border-gray-200 dark:border-gray-700 focus:outline-none focus:border-primary text-sm" placeholder="Masukkan Email">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Telepon</label>
+                            <input type="tel" required class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-dark/50 border border-gray-200 dark:border-gray-700 focus:outline-none focus:border-primary text-sm" placeholder="Masukkan Nomor Telepon">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Perusahaan</label>
+                            <input type="text" class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-dark/50 border border-gray-200 dark:border-gray-700 focus:outline-none focus:border-primary text-sm" placeholder="Masukkan Nama Perusahaan">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Pilih Layanan</label>
+                        <select class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-dark/50 border border-gray-200 dark:border-gray-700 focus:outline-none focus:border-primary text-sm">
+                            <option>Security Service</option>
+                            <option>Cleaning Service</option>
+                            <option>Pengadaan Tenaga Kerja</option>
+                            <option>Facility Management</option>
+                            <option>Lainnya</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Pesan</label>
+                        <textarea rows="4" required class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-dark/50 border border-gray-200 dark:border-gray-700 focus:outline-none focus:border-primary text-sm" placeholder="Tuliskan pesan atau kebutuhan Anda..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 rounded-xl bg-primary hover:bg-secondary text-white font-bold text-sm shadow-xl transition-all">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-20 pb-10 px-6 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div>
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-xl">JPB</div>
+                <span class="text-lg font-bold tracking-tight">JAWARA PANDU BHAKTI</span>
+            </div>
+            <p class="text-gray-400 text-sm font-light mb-6">Mitra profesional terpercaya penyedia tenaga kerja berkualitas dan facility management komprehensif di Indonesia.</p>
+            <div class="flex items-center gap-4">
+                <a href="https://id.linkedin.com/company/pt-jawara-pandu-bhakti" target="_blank" class="w-10 h-10 ..."><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/jawarapandubhakti_official" target="_blank" class="w-10 h-10 ..."><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/p/PT-Jawara-Pandu-Bhakti-61579341661401/" target="_blank" class="w-10 h-10 ..."><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div>
+            <h4 class="font-bold text-base mb-6 text-accent">Layanan</h4>
+            <ul class="space-y-3 text-sm text-gray-400 font-light">
+                <li><a href="#layanan" class="hover:text-white transition-colors">Security Service</a></li>
+                <li><a href="#layanan" class="hover:text-white transition-colors">Cleaning Service</a></li>
+                <li><a href="#layanan" class="hover:text-white transition-colors">Pengadaan Tenaga Kerja</a></li>
+                <li><a href="#layanan" class="hover:text-white transition-colors">Facility Management</a></li>
+                <li><a href="#layanan" class="hover:text-white transition-colors">BPO Services</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold text-base mb-6 text-accent">Quick Links</h4>
+            <ul class="space-y-3 text-sm text-gray-400 font-light">
+                <li><a href="#beranda" class="hover:text-white transition-colors">Beranda</a></li>
+                <li><a href="#tentang" class="hover:text-white transition-colors">Tentang Kami</a></li>
+                <li><a href="#legalitas" class="hover:text-white transition-colors">Legalitas</a></li>
+                <li><a href="#karir" class="hover:text-white transition-colors">Karir</a></li>
+                <li><a href="#kontak" class="hover:text-white transition-colors">Kontak</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold text-base mb-6 text-accent">Kontak</h4>
+            <ul class="space-y-3 text-sm text-gray-400 font-light">
+                <li>Batumas Candra Asri Blok B4 No. 20, Pandaan, Pasuruan, Jawa Timur</li>
+                <li>0343 – 634419</li>
+                <li><a href="mailto:jawarapandubhakti@gmail.com" class="hover:text-white transition-colors">jawarapandubhakti@gmail.com</a></li>
+                <li><a href="mailto:hrdjarduti@gmail.com" class="hover:text-white transition-colors">hrdjarduti@gmail.com khusus untuk mengirim CV</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 font-light">
+        <p>&copy; 2026 PT. Jawara Pandu Bhakti. All Rights Reserved.</p>
+        <div class="flex gap-6 mt-4 sm:mt-0">
+            <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating Buttons -->
+<a href="https://wa.me/6287865000033" target="_blank" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-green-500 text-white flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+<a href="tel:+6287865000033" class="fixed bottom-24 right-6 z-40 w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center text-xl shadow-2xl hover:scale-110 transition-transform" aria-label="Call">
+    <i class="fa-solid fa-phone"></i>
+</a>
+
+<!-- Lightbox Modal -->
+<div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-6">
+    <button id="lightbox-close" class="absolute top-6 right-6 text-white text-3xl focus:outline-none"><i class="fa-solid fa-xmark"></i></button>
+    <img id="lightbox-img" src="" alt="Lightbox" class="max-w-full max-h-[85vh] rounded-2xl shadow-2xl">
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+            // Initialize AOS Animation
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+        });
+
+            // Loading Screen
+        const loadingScreen = document.getElementById('loading-screen');
+        window.addEventListener('load', () => {
+            loadingScreen.style.opacity = '0';
+            setTimeout(() => {
+                loadingScreen.style.display = 'none';
+            }, 500);
+        });
+        setTimeout(() => {
+            if (loadingScreen && loadingScreen.style.display !== 'none') {
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => { loadingScreen.style.display = 'none'; }, 500);
+            }
+        }, 1000);
+
+            // Custom Cursor
+        const cursorDot = document.querySelector('.custom-cursor-dot');
+        const cursorOutline = document.querySelector('.custom-cursor-outline');
+
+        window.addEventListener('mousemove', (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+            if(cursorDot && cursorOutline) {
+                cursorDot.style.transform = `translate(${posX}px, ${posY}px)`;
+                cursorOutline.style.transform = `translate(${posX - 16}px, ${posY - 16}px)`;
+            }
+        });
+
+            // Scroll Progress & Navbar Sticky State
+        const navbar = document.getElementById('navbar');
+        const scrollProgress = document.getElementById('scroll-progress');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            if(scrollProgress) scrollProgress.style.width = `${scrollPercent}%`;
+
+            if (scrollTop > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+
+            // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const mobileDarkToggle = document.getElementById('mobile-dark-toggle');
+        const htmlElement = document.documentElement;
+
+        const toggleDarkMode = () => {
+            htmlElement.classList.toggle('dark');
+            if (htmlElement.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        };
+
+        if (localStorage.getItem('theme') === 'dark') {
+            htmlElement.classList.add('dark');
+        }
+
+        darkModeToggle?.addEventListener('click', toggleDarkMode);
+        mobileDarkToggle?.addEventListener('click', toggleDarkMode);
+
+            // Mobile Menu Toggle
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        hamburgerBtn?.addEventListener('click', () => {
+            if (mobileMenu.classList.contains('-translate-y-full')) {
+                mobileMenu.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
+                mobileMenu.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+            } else {
+                mobileMenu.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+                mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+            }
+        });
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+                mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+            });
+        });
+
+            // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        let animated = false;
+
+        const runCounters = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                let count = 0;
+                const speed = target / 50;
+
+                const updateCount = () => {
+                    count += speed;
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count);
+                        setTimeout(updateCount, 30);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        };
+
+        window.addEventListener('scroll', () => {
+            const firstCounter = document.querySelector('.counter');
+            if (firstCounter && !animated) {
+                const statsSection = firstCounter.getBoundingClientRect();
+                if (statsSection.top < window.innerHeight) {
+                    runCounters();
+                    animated = true;
+                }
+            }
+        });
+
+            // Swiper Client Slider
+        new Swiper('.client-swiper', {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: { slidesPerView: 3 },
+                768: { slidesPerView: 4 },
+                1024: { slidesPerView: 5 },
+            }
+        });
+
+            // Swiper Testimonial Slider
+        new Swiper('.testimonial-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+            }
+        });
+
+            // Lightbox Modal
+        const lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
+        const lightboxModal = document.getElementById('lightbox-modal');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxClose = document.getElementById('lightbox-close');
+
+        lightboxTriggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const imgSrc = trigger.getAttribute('data-img');
+                if(lightboxImg) lightboxImg.src = imgSrc;
+                lightboxModal.classList.remove('hidden');
+                lightboxModal.classList.add('flex');
+            });
+        });
+
+        lightboxClose?.addEventListener('click', () => {
+            lightboxModal.classList.add('hidden');
+            lightboxModal.classList.remove('flex');
+        });
+
+        lightboxModal?.addEventListener('click', (e) => {
+            if (e.target === lightboxModal) {
+                lightboxModal.classList.add('hidden');
+                lightboxModal.classList.remove('flex');
+            }
+        });
+
+            // Ripple Button Effect
+        const buttons = document.querySelectorAll('.ripple-btn');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                const x = e.clientX - this.getBoundingClientRect().left;
+                const y = e.clientY - this.getBoundingClientRect().top;
+
+                const ripple = document.createElement('span');
+                ripple.classList.add('ripple');
+                ripple.style.left = `${x}px`;
+                ripple.style.top = `${y}px`;
+
+                this.appendChild(ripple);
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+            // Contact Form Submission
+        const contactForm = document.getElementById('contact-form');
+        contactForm?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah berhasil dikirim. Tim kami akan segera menghubungi Anda.');
+            contactForm.reset();
+        });
+    });
+</script>
+<script>
+    // Fungsi untuk membuka Pop-up Detail Layanan
+    function openServiceModal(title, description, iconClass) {
+        const modal = document.getElementById('service-modal');
+        const modalContent = document.getElementById('service-modal-content');
+        document.getElementById('modal-title').innerText = title;
+        document.getElementById('modal-desc').innerText = description;
+        
+        // Ubah ikon sesuai layanan
+        const iconContainer = document.getElementById('modal-icon');
+        iconContainer.innerHTML = `<i class="fa-solid ${iconClass}"></i>`;
+
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        setTimeout(() => {
+            modalContent.classList.remove('scale-95', 'opacity-0');
+            modalContent.classList.add('scale-100', 'opacity-100');
+        }, 10);
+    }
+
+    // Fungsi untuk menutup Pop-up Detail Layanan
+    function closeServiceModal() {
+        const modal = document.getElementById('service-modal');
+        const modalContent = document.getElementById('service-modal-content');
+        modalContent.classList.remove('scale-100', 'opacity-100');
+        modalContent.classList.add('scale-95', 'opacity-0');
+        setTimeout(() => {
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }, 200);
+    }
+
+    // Tutup modal jika area luar diklik
+    document.getElementById('service-modal')?.addEventListener('click', (e) => {
+        if (e.target.id === 'service-modal') {
+            closeServiceModal();
+        }
+    });
+</script>
+<script>
+    // Fungsi untuk menggeser slider foto ke kiri/kanan
+    function scrollSlider(direction) {
+        const slider = document.getElementById('photo-slider');
+        const scrollAmount = 350; // Lebar geser per klik
+        if (direction === 'left') {
+            slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        } else {
+            slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+    }
+
+    // Fungsi untuk membuka foto dalam ukuran besar (Lightbox) saat diklik/ditekan
+    function openLightbox(imgSrc, captionText) {
+        const modal = document.getElementById('lightbox-modal');
+        const img = document.getElementById('lightbox-img');
+        const caption = document.getElementById('lightbox-caption');
+        
+        img.src = imgSrc;
+        caption.innerText = captionText;
+        
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+    }
+
+    // Fungsi untuk menutup modal foto besar
+    function closeLightbox() {
+        const modal = document.getElementById('lightbox-modal');
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+    }
+
+    // Tutup lightbox jika area luar gambar diklik
+    document.getElementById('lightbox-modal')?.addEventListener('click', (e) => {
+        if (e.target.id === 'lightbox-modal') {
+            closeLightbox();
+        }
+    });
+</script>
+</body>
+</html>
